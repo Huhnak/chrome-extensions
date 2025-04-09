@@ -1,0 +1,1 @@
+console.log("DeepSeek Copy Cleaner работает!");

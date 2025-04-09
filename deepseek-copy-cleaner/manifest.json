@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "DeepSeek Copy Cleaner",
+    "version": "1.0",
+    "description": "Удаляет лишние пробелы при копировании с deepseek.com",
+    "permissions": ["clipboardWrite", "clipboardRead"],
+    "content_scripts": [
+      {
+        "world": "MAIN",
+        "matches": ["https://deepseek.com/*",
+        "https://*.deepseek.com/*",
+        "http://deepseek.com/*",
+        "http://*.deepseek.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "icons": {
+      "48": "icon48.png"
+    }
+  }

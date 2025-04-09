@@ -1,0 +1,31 @@
+{
+  "name": "Normal person volume keys for youtube",
+  "description": "Adds sound arrow keys that have steps by 5% with binding to n*5 and always work.",
+  "version": "1.0",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+    
+  },
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "extension_icon.png"
+  },
+  "content_scripts" : [
+    {
+      "world": "MAIN",
+      "js": ["scripts/main.js"],
+      "matches": [
+        "https://*.youtube.com/*",
+        "https://youtube.com/*",
+        "http://*.youtube.com/*",
+        "http://youtube.com/*"
+      ],
+      "css": ["scripts/style.css"],
+      "run_at": "document_end"
+    }
+  ]
+}

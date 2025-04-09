@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      width: 200px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    .slider-container {
+      margin: 15px 0;
+    }
+    #value-display {
+      text-align: center;
+      font-weight: bold;
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="slider-container">
+    <label for="sidebar_width">Sidebar width:</label>
+    <input type="range" id="sidebar_width" min="100" max="500" step="20">
+    <div id="value-display">200</div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

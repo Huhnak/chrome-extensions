@@ -1,0 +1,15 @@
+.huhnak__volumeElement{
+    display: none;
+    background-color: #000000c7;
+    position: relative;
+    height: 8%;
+    aspect-ratio: 2/1;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    line-height: 30px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
