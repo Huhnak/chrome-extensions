@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "WParty Tweaks",
+    "version": "1.0",
+    "description": "Упрощает пользование сайтом wparty.net",
+    "icons": {
+      "48": "icon.png"
+    },
+    "action": {
+      "default_icon": "icon.png"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://wparty.net/*",
+        "http://wparty.net/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "permissions": ["storage"],
+    "web_accessible_resources": [
+      {
+      "resources": [ "images/chat-round-svgrepo-com.svg","images/close-icon.svg" ],
+      "matches": [ "https://wparty.net/*" ]
+    }
+    ]
+  }
